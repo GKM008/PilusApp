@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "149169317244",
+    "project_id": "pilus-96cd8",
+    "storage_bucket": "pilus-96cd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149169317244:android:0fdbbcb0e863712ea030f9",
+        "android_client_info": {
+          "package_name": "com.example.pilus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149169317244-duihdkea18k5423894u1ru8876t21k2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-NhnQCY6OtAb4m_sY5qbLS9q79PCTNSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149169317244-duihdkea18k5423894u1ru8876t21k2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149169317244:android:2a46a09a90db71c7a030f9",
+        "android_client_info": {
+          "package_name": "com.example.pilusapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149169317244-duihdkea18k5423894u1ru8876t21k2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-NhnQCY6OtAb4m_sY5qbLS9q79PCTNSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149169317244-duihdkea18k5423894u1ru8876t21k2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
