@@ -4,7 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.10729166666666666" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_list.xml" value="0.1" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_password_change.xml" value="0.1" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_password_reset.xml" value="0.18" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_recycler.xml" value="0.18" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_recycler_view.xml" value="0.22" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_userlist.xml" value="0.22" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_userslist.xml" value="0.196875" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/activity_view_pager.xml" value="0.1" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/card_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/fragment_first.xml" value="0.22" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/item.xml" value="0.22" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/list_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/person.xml" value="0.1" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/user_item.xml" value="0.1634963768115942" />
+        <entry key="..\:/Users/Aqu/AndroidStudioProjects/PilusApp/app/src/main/res/layout/view_pager_item.xml" value="0.1" />
       </map>
     </option>
   </component>
