@@ -1,2 +1,1 @@
-mokled da konkretulad aplikacias vechalichebodi da manifestma vabshe mtlianad gaawitla da azrze arvar ravuyo
-aseti cringe situacia gadamxda tavs
+Mogesalmebit aplikaciashi saxelad - Pilus. aplikacia sruliad qartulenovania da shesamabisad README.TXT failic qartulad gviweria. Pilus gaxlavt aplikacia romelzec adamianebs sheudzliat ertmanetis gacnoba da siyvarulis povna. aplikaciashi chashenebulia Firebase Realtime Database. Aplikaciashi shesadzlebelia tqveni profilis fotos, E-mailis da momxmareblis saxelis mititeba. aseve shegidzliat naxot sxva momxmareblis profilis fotos linki, E-maili da momxmareblis saxeli.
