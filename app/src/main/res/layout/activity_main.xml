@@ -77,6 +77,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="შენახვა" />
+        <Button
+            android:id="@+id/buttonChangePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="პაროლის შეცვლა" />
 
         <Button
             android:id="@+id/buttonLogOut"

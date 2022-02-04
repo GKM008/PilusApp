@@ -17,10 +17,10 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
     init()
     registerListeners()
     }
+
     private fun init(){
         editTextEmail = findViewById(R.id.editTextEmail)
         editTextPassword = findViewById(R.id.editTextPassword)
@@ -28,6 +28,7 @@ class LoginActivity : AppCompatActivity() {
         buttonRegister = findViewById(R.id.buttonRegister)
         buttonResetPassword = findViewById(R.id.buttonResetPassword)
     }
+
 
     private fun registerListeners(){
         buttonRegister.setOnClickListener {
@@ -58,5 +59,7 @@ class LoginActivity : AppCompatActivity() {
         private fun gotoProfile(){
             startActivity(Intent(this, ProfileActivity::class.java))
             finish()
+
+
         }
 }

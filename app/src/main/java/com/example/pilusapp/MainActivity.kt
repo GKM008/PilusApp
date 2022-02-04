@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userEmailInput : EditText
     private lateinit var buttonSave: Button
     private lateinit var buttonLogOut: Button
+    private lateinit var buttonChangePass: Button
     private val db = FirebaseDatabase.getInstance().getReference("UserInfo")
     private val auth = FirebaseAuth.getInstance()
 
@@ -59,12 +60,16 @@ class MainActivity : AppCompatActivity() {
         userEmailInput = findViewById(R.id.userEmailInput)
         buttonSave = findViewById(R.id.buttonSave)
         buttonLogOut = findViewById(R.id.buttonLogOut)
+        buttonChangePass = findViewById(R.id.buttonChangePass)
 
 
     }
     private fun gotoProfile(){
         startActivity(Intent(this,ProfileActivity::class.java))
         finish()}
+    private fun gotoChangePass(){
+        startActivity(Intent(this,PasswordChangeActivity::class.java))
+    }
     private fun gotoLogin(){
         startActivity(Intent(this, LoginActivity::class.java))
     }
@@ -74,20 +79,24 @@ class MainActivity : AppCompatActivity() {
             val link = profileLink.text.toString()
             val email = userEmailInput.text.toString()
             if(name.isNotEmpty() and link.isNotEmpty() and email.isNotEmpty()){
-            val userInfo = UserInfo(name, link, email)
-            db.child(auth.currentUser?.uid!!)
-                .setValue(userInfo)
-            gotoProfile()}
+                val userInfo = UserInfo(name, link, email)
+                db.child(auth.currentUser?.uid!!)
+                    .setValue(userInfo)
+                gotoProfile()}
 
             else {
                 gotoProfile()}
 
         }
+        buttonChangePass.setOnClickListener {
+            gotoChangePass()
+        }
+
         buttonLogOut.setOnClickListener {
             gotoLogin()
         }
 
 
-        }
     }
+}
 
