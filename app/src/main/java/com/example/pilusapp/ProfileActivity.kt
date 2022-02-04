@@ -22,7 +22,7 @@ class ProfileActivity : AppCompatActivity() {
             if(position == 0){
                 tab.text = "პროფილი"
             }else{
-                tab.text = "რა არის ქრინჯი"}
+                tab.text = "ძებნა"}
 
         }.attach()
     }

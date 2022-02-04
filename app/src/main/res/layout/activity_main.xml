@@ -33,13 +33,24 @@
             android:textColor="#EA80FC"
             android:textColorLink="#EA80FC"
             android:textSize="25sp" />
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="მომხმარებელი"
+            android:textColor="#EA80FC"
+            android:textColorLink="#EA80FC"
+            android:textSize="25sp" />
 
         <EditText
             android:id="@+id/profileLink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:hint="E-mail"
+            android:hint="პროფილის ფოტოს ლინკი"
+            android:minHeight="48dp"
             android:textColorHighlight="#FF80AB"
             android:textColorLink="#EA80FC" />
 
@@ -48,6 +59,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="მომხმარებლის სახელი"
+            android:minHeight="48dp"
+            android:textColorHighlight="#FF80AB"
+            android:textColorLink="#EA80FC" />
+        <EditText
+            android:id="@+id/userEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:minHeight="48dp"
             android:textColorHighlight="#FF80AB"
             android:textColorLink="#EA80FC" />
 
@@ -62,6 +82,6 @@
             android:id="@+id/buttonLogOut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="გამოსვლა" />
+            android:text="პროფილიდან გამოსვლა" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

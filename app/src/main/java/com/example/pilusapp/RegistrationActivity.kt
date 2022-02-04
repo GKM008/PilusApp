@@ -40,7 +40,7 @@ class RegistrationActivity : AppCompatActivity() {
              .createUserWithEmailAndPassword(email,password)
              .addOnCompleteListener {task ->
                  if(task.isSuccessful){
-                 startActivity(Intent(this,LoginActivity::class.java))
+                 startActivity(Intent(this, LoginActivity::class.java))
                  finish()
                  Toast.makeText(this,"რეგისტრაცია წარმატებით დასრულდა", Toast.LENGTH_LONG).show()}
                  else{

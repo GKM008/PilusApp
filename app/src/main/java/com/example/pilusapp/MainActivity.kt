@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userName: TextView
     private lateinit var profileLink: EditText
     private lateinit var userNameInput: EditText
+    private lateinit var userEmail: TextView
+    private lateinit var userEmailInput : EditText
     private lateinit var buttonSave: Button
     private lateinit var buttonLogOut: Button
     private val db = FirebaseDatabase.getInstance().getReference("UserInfo")
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val userInfo: UserInfo = snapshot.getValue(UserInfo::class.java) ?: return
                 userName.text = userInfo.name
+                userEmail.text = userInfo.email
                 Glide.with(this@MainActivity)
                     .load(userInfo.imageUrl).placeholder(R.drawable.defaultprofile)
                     .into(imageProfile)
@@ -50,8 +53,10 @@ class MainActivity : AppCompatActivity() {
     private fun init() {
         imageProfile = findViewById(R.id.imageProfile)
         userName = findViewById(R.id.userName)
+        userEmail = findViewById(R.id.userEmail)
         profileLink = findViewById(R.id.profileLink)
         userNameInput = findViewById(R.id.userNameInput)
+        userEmailInput = findViewById(R.id.userEmailInput)
         buttonSave = findViewById(R.id.buttonSave)
         buttonLogOut = findViewById(R.id.buttonLogOut)
 
@@ -61,23 +66,28 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this,ProfileActivity::class.java))
         finish()}
     private fun gotoLogin(){
-        startActivity(Intent(this,LoginActivity::class.java))
+        startActivity(Intent(this, LoginActivity::class.java))
     }
     private fun onClickListeners() {
         buttonSave.setOnClickListener {
             val name = userNameInput.text.toString()
             val link = profileLink.text.toString()
+            val email = userEmailInput.text.toString()
+            if(name.isNotEmpty() and link.isNotEmpty() and email.isNotEmpty()){
+            val userInfo = UserInfo(name, link, email)
+            db.child(auth.currentUser?.uid!!)
+                .setValue(userInfo)
+            gotoProfile()}
 
-
-                val userInfo = UserInfo(name, link)
-                db.child(auth.currentUser?.uid!!)
-                    .setValue(userInfo)
-                gotoProfile()
-            buttonLogOut.setOnClickListener {
-                gotoLogin()
+            else {
+                gotoProfile()}
 
         }
+        buttonLogOut.setOnClickListener {
+            gotoLogin()
+        }
+
 
         }
     }
-}
+

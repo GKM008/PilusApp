@@ -31,10 +31,10 @@ class LoginActivity : AppCompatActivity() {
 
     private fun registerListeners(){
         buttonRegister.setOnClickListener {
-            startActivity(Intent(this,RegistrationActivity::class.java))
+            startActivity(Intent(this, RegistrationActivity::class.java))
         }
         buttonResetPassword.setOnClickListener {
-            startActivity(Intent(this,PasswordResetActivity::class.java))
+            startActivity(Intent(this, PasswordResetActivity::class.java))
         }
         buttonLogin.setOnClickListener {
             val email = editTextEmail.text.toString()
@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
         private fun gotoProfile(){
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, ProfileActivity::class.java))
             finish()
         }
 }

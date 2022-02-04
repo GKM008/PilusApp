@@ -34,7 +34,7 @@ class PasswordResetActivity : AppCompatActivity() {
                     addOnCompleteListener { task ->
                         if(task.isSuccessful){
                             Toast.makeText(this,"პაროლის აღსადგენი ლინკი გამოგზავნილია თქვენს მაილზე (｡◕‿‿◕｡)",Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this,LoginActivity::class.java) )
+                            startActivity(Intent(this, LoginActivity::class.java) )
                         }
                         else{
                             Toast.makeText(this,"დაფიქსირდა შეცდომა, დამატებითი ინფორმაციისთვის მიმართეთ პრეს-ცენტრს (✿´‿`)",Toast.LENGTH_LONG).show()
