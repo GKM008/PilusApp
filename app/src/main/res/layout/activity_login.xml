@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginaActivity">
 
     <LinearLayout
         android:id="@+id/top"
@@ -32,6 +32,7 @@
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
+            android:minHeight="48dp"
             android:textColorHint="#EA80FC" />
 
         <EditText
@@ -41,6 +42,7 @@
             android:ems="10"
             android:hint="პაროლი"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:textColorHint="#EA80FC" />
 
         <Button

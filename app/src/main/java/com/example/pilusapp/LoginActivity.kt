@@ -8,7 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginActivity : AppCompatActivity() {
+class LoginaActivity : AppCompatActivity() {
     private lateinit var editTextEmail : EditText
     private lateinit var editTextPassword : EditText
     private lateinit var buttonLogin : Button
@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var buttonResetPassword : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_logina)
 
     init()
     registerListeners()
@@ -31,10 +31,10 @@ class LoginActivity : AppCompatActivity() {
 
     private fun registerListeners(){
         buttonRegister.setOnClickListener {
-            startActivity(Intent(this,RegistrationActivity::class.java))
+            startActivity(Intent(this, RegistrationActivity::class.java))
         }
         buttonResetPassword.setOnClickListener {
-            startActivity(Intent(this,PasswordResetActivity::class.java))
+            startActivity(Intent(this, PasswordResetActivity::class.java))
         }
         buttonLogin.setOnClickListener {
             val email = editTextEmail.text.toString()
@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
         private fun gotoProfile(){
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
 }
